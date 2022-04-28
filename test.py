@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('C:/Users/user/Desktop/Python for beginner/5.jpg')
+image = cv2.imread('5.jpg')
 result = image.copy()
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 thresh = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 49, 11)
